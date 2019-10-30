@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ArabigosARomanosApplication {
+public class ArabigosToRomanosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ArabigosARomanosApplication.class, args);
+		SpringApplication.run(ArabigosToRomanosApplication.class, args);
 	}
 
 }
