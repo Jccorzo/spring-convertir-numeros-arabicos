@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @Entity
-class Number {
+public class Number {
 	
 	private @Id @GeneratedValue Long id;
 	private String requestedNumber;
@@ -17,7 +17,7 @@ class Number {
 	
 	 Number() {}
 	
-	 Number(String requestedNumber, String responsedNumber) {
+	 public Number(String requestedNumber, String responsedNumber) {
 		this.requestedNumber = requestedNumber;
 		this.responsedNumber = responsedNumber;
 	}	
