@@ -3,7 +3,7 @@ services:
   web:
     build: .
     restart: always
-    container_name: prueba
+    container_name: spring-boot-microservice
     ports:
         - "8080:8080"
     
