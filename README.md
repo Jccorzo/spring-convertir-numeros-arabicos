@@ -14,7 +14,7 @@ docker-compose up
   docker-compose up 
   
 ### Rutas (Content-Type: application/json)
-  **http://localhost:8080/getNumber (Post):** Enviar el número arábigo. Se obtiene el número romano como respuesta
+  **http://localhost:8080/getNumber (Post):** Enviar el número arábigo cómo valor del parámetro "number". Se obtiene el número romano como respuesta
   
   **http://localhost:8080/transformedNumbers (Get):** A medida que se hacen peticiones a la ruta /getNumber, las respuestas se almacenan, y se consultan en esta ruta.
   
