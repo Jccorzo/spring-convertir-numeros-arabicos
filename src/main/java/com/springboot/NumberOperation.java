@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 public class NumberOperation {
 	
-	private NumberOperation() {}
+	NumberOperation() {}
 	
     private static final TreeMap<Integer, String> map = new TreeMap<>();
 
@@ -36,11 +36,26 @@ public class NumberOperation {
 
     public static boolean validateNumber(String requestedNumber) {
     	boolean numberIsValid = true; 
-    	int number = Integer.parseInt(requestedNumber);
-    	if(number <= 0 || number > 3999) {
-    		numberIsValid = false;
-    	}
-		return numberIsValid;
     	
+    	if(!isNumber(requestedNumber)) {
+    		numberIsValid = false;
+    	}else {
+    		int number = Integer.parseInt(requestedNumber);
+    		if(number <= 0 || number > 3999) {
+        		numberIsValid = false;
+        	}
+    	}
+		return numberIsValid;	
     }
+    
+    public static boolean isNumber(String requestedNumber) {
+    	 boolean isNumber = true;
+         try {
+             Integer.parseInt(requestedNumber);
+         } catch (NumberFormatException excepcion) {
+        	 isNumber = false;
+         }
+         return isNumber;
+     }
+
 }

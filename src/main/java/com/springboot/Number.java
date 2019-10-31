@@ -5,16 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
 @Entity
 class Number {
 	
 	private @Id @GeneratedValue Long id;
-	@Getter @Setter private String requestedNumber;
-	@Getter @Setter private String responsedNumber;
+	private String requestedNumber;
+	private String responsedNumber;
 	
 	
 	 Number() {}
