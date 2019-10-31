@@ -10,6 +10,7 @@ docker-compose up
 
 ## Ejecutar el proyecto con una imagen Docker almacenada en Docker Hub
   cd ExecuteWithpublicImage
+  
   docker-compose up 
   
 ### Rutas (Content-Type: application/json)
