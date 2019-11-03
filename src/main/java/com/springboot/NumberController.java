@@ -16,7 +16,7 @@ public class NumberController {
 	
 	private NumberRepository repository;
 		
-	NumberController(NumberRepository repository){
+	public NumberController(NumberRepository repository){
 		this.repository = repository;
 	}
 	

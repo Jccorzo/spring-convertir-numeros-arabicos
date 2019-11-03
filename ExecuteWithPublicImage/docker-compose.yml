@@ -1,9 +1,9 @@
 version: '3.7'
 services:
-  web:
+  ubuntu:
     build: .
-    restart: always
-    container_name: spring-boot-microservice
+    image: ccorzo/spring-boot:ubuntu
+    container_name: spring-project-docker
     ports:
         - "8080:8080"
     

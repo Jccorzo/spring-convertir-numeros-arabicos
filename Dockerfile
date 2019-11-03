@@ -1,5 +1,7 @@
-FROM openjdk:11
-RUN mkdir /usr/src/spring-project
-COPY build/libs/ArabigosARomanos-0.0.1-SNAPSHOT.jar /usr/src/spring-project
-WORKDIR /usr/src/spring-project
-CMD ["java", "-jar", "/usr/src/spring-project/ArabigosARomanos-0.0.1-SNAPSHOT.jar"]
+FROM ubuntu
+RUN apt-get update -y && apt-get install openjdk-11-jdk -y
+EXPOSE 8080
+WORKDIR /home/ubuntu
+RUN mkdir /home/ubuntu/spring-project
+COPY build/libs/ArabigosARomanos-0.0.1-SNAPSHOT.jar /home/ubuntu/spring-project
+CMD ["java", "-jar", "/home/ubuntu/spring-project/ArabigosARomanos-0.0.1-SNAPSHOT.jar"]
