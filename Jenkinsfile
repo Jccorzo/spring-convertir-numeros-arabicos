@@ -3,7 +3,7 @@ pipeline {
             image 'gradle:jdk11' 
         }
     stages {
-        stage('Unit Test') {
+        stage('clean') {
             steps {
                 sh 'gradle clean '
             }
