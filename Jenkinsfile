@@ -1,9 +1,11 @@
 pipeline {
-    agent any
+    agent docker {
+            image 'gradle:jdk11' 
+        }
     stages {
         stage('Unit Test') {
             steps {
-                sh './gradlew test '
+                sh 'gradle clean '
             }
         }
     }
