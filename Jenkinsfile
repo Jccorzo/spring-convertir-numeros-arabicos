@@ -1,7 +1,9 @@
 pipeline {
-    agent docker {
-            image 'gradle:jdk11' 
-        }
+    agent {
+        docker {
+                image 'gradle:jdk11' 
+            }
+    }
     stages {
         stage('clean') {
             steps {
