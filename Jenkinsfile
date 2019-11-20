@@ -10,5 +10,10 @@ pipeline {
                 sh 'gradle clean '
             }
         }
+        stage('Junit test') {
+            steps {
+                sh 'gradle test '
+            }
+        }
     }
 }
