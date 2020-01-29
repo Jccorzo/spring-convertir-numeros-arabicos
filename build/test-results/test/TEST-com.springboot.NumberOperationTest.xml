@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.springboot.NumberOperationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-29T18:46:32" hostname="MacBook-Air-de-Camilo.local" time="0.049">
+  <properties/>
+  <testcase name="testWhenISendOnceFortyResponse" classname="com.springboot.NumberOperationTest" time="0.001"/>
+  <testcase name="testWhenTheNumberIsOutOfRangeResponseFalse" classname="com.springboot.NumberOperationTest" time="0.0"/>
+  <testcase name="testWhenTheRequestIsAStringResponseFalse" classname="com.springboot.NumberOperationTest" time="0.001"/>
+  <testcase name="testWhenISendANumberResponseIsFalse" classname="com.springboot.NumberOperationTest" time="0.001"/>
+  <testcase name="testWhenISendANumberResponseIsTrue" classname="com.springboot.NumberOperationTest" time="0.002"/>
+  <testcase name="testWhenISendOnceFourThousandResponse" classname="com.springboot.NumberOperationTest" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
